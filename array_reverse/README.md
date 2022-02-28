@@ -5,3 +5,10 @@
 
 ## Whiteboard Process
 ![WhiteBoard image](array-reverse.jpg)
+
+## Another way to reverse an array (python)
+def reverseArray(Array):
+    newArr = Array[::-1]
+    return print(newArr)
+
+reverseArray([10,22,15,0])
