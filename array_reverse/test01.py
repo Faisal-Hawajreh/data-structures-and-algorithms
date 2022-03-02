@@ -1,13 +1,16 @@
-def reverseArray(Array):
-    newArr = []
-    n = len(Array)
-    for i, element in enumerate(Array):
-        newArr.insert(i,Array[n-1-i])
-    return print(newArr)
-reverseArray([10,22,15,0])
+from array import array
+import math
+def reverse_array(Arr):
+    n = len(Arr)-1
+    i = 0
+    while (i <= math.floor(n/2)):
+        Arr[i],Arr[n-i] = Arr[n-i],Arr[i]
+        i+=1
+    return Arr
+reverse_array([10,22,1,15,0])
 
-# def reverseArray(Array):
+# def reverse_array(Array):
 #     newArr = Array[::-1]
 #     return print(newArr)
 
-# reverseArray([10,22,15,0])
+# reverse_array([10,22,15,0])
